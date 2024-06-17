@@ -1135,6 +1135,10 @@ class PlayState extends MusicBeatState
 			botplayTxt.y = timeBarBG.y - 78;
 		}
 
+	        var creditTxt = new flxText(876, 648 348);
+                creditTxt.text = "port by BD DEAREST"; 
+		
+			
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
