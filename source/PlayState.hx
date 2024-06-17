@@ -1135,14 +1135,17 @@ class PlayState extends MusicBeatState
 			botplayTxt.y = timeBarBG.y - 78;
 		}
 
-	        var creditTxt = new flxText(876, 648 348);
-                creditTxt.text = "port by BD DEAREST"; 
-		
-			
+	       var creditTxt = new flxText(876, 648 348);
+               creditTxt.text = "port by BD DEAREST"; creditTxt.setFormat(Paths.font("vcr.ttf"), 30, FixColor,WHITHE, RIGHT, FlxColor,BLACK);
+	       creditTxt.scrollFactor.set();
+               add(creditTxt);
+
+	
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
-		healthBar.cameras = [camHUD];
+		creditTxt.cameras = [camHUD];
+	        healthBar.cameras = [camHUD];
 		healthBarBG.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
